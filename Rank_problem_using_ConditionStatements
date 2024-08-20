@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Rank_problem_using_ConditionStatements {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Enter your marks: ");
+		int m=s.nextInt();
+		if(m>=90 && m<=100) {
+			System.out.println("Congratulations! You got !st rank ");
+		}else if(m>=75 && m<90) {
+			System.out.println("You got 2nd rank");
+		}else if(m>=50 && m<75)
+		{
+			System.out.println("You got 3rd rank");
+		}else if(m>= 35 && m<50) {
+			System.out.println("You just passed");
+		}else if(m>=10 && m<35) {
+			System.out.println("You falied");
+		}else {
+			System.out.println("Invalid credentials. Please enter valid marks");
+		}
+	}
+
+}
