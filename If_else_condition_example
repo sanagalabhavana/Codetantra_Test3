@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class If_else_condition_example {
+
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		System.out.print("Did you clear the written test? (yes/no): ");
+		String s1=s.nextLine();
+		if(s1.equalsIgnoreCase("yes")) {
+			System.out.println("You are eligible for the group discussion round");
+			System.out.print("Did you pass the group discussion round? (yes/no): ");
+			String s2=s.nextLine();
+			if(s2.equalsIgnoreCase("yes")){
+				System.out.println("You are eligible for the technical round");
+				System.out.print("Did you pass the technical round? (yes/no): ");
+				String s3=s.nextLine();
+				if(s3.equalsIgnoreCase("yes")) {
+					System.out.println("Congrats! you are eligible for the HR round");
+				}else {
+					System.out.println("Sorry, You can go home");
+				}
+			}else {
+				System.out.println("Sorry, you can go home");
+			}
+					
+		}else {
+			System.out.println("Sorry, You can go home");
+		}
+		
+
+	}
+
+}
